@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sheikh Muhammad Seam | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 50px;
+    }
+
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #0ff;
+      box-shadow: 0 0 20px #0ff;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    h1, h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #0ff;
+      margin-top: 20px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      border-bottom: 1px solid #222;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    .button {
+      background: transparent;
+      color: #0ff;
+      padding: 10px 25px;
+      border: 2px solid #0ff;
+      border-radius: 30px;
+      margin-top: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    .button:hover {
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 20px #0ff;
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #0ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      background: #0d0d0d;
+      padding: 10px;
+      text-align: center;
+      z-index: 99;
+      border-bottom: 1px solid #222;
+    }
+
+    .nav a {
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: #ff00ff;
+    }
+  </style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="nav">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<header id="about">
+  <img src="IMG_20230303_120705.jpg" alt="Sheikh Muhammad Seam">
+  <h1>Sheikh Muhammad Seam</h1>
+  <h2>Junior Web Developer & Virtual Assistant</h2>
+  <p>Hey, This is me Sheikh Muhammad Seam. I have just completed my higher secondary, now preparing for admissions. Besides I'm a junior level web developer as well as a Virtual assistant. If you guys feel I can be of any use to you, feel free to knock me.</p>
+  <a href="resume.pdf" download class="button">Download Resume</a>
+</header>
+
+<section class="section" id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Web Development</li>
+    <li>Cloud Computing</li>
+    <li>Public Speaking</li>
+    <li>Leadership</li>
+    <li>Mentorship</li>
+  </ul>
+</section>
+
+<section class="section" id="education">
+  <h2>Education</h2>
+  <ul>
+    <li>Completed Higher Secondary - HSC 2024<br>Bangladesh Navy College, Mirpur-14, Dhaka</li>
+    <li>Higher Secondary Graduated - 2022<br>Shaheen School, Tangail</li>
+  </ul>
+</section>
+
+<section class="section" id="experience">
+  <h2>Work Experience</h2>
+  <ul>
+    <li>Former President at <a href="https://www.facebook.com/bncditclub" target="_blank">BNCD Information Technology Club</a></li>
+    <li>Former Managing Director - <a href="https://www.facebook.com/Oprotim22" target="_blank">Oprotim-22</a></li>
+  </ul>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:sheikhmuhammadseam@outlook.com">sheikhmuhammadseam@outlook.com</a></p>
+  <p>Phone: +8801540-017396</p>
+  <p>Facebook: <a href="https://www.facebook.com/sheikhmdseam" target="_blank">sheikhmdseam</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/sheikhmuhammadseam" target="_blank">linkedin.com/in/sheikhmuhammadseam</a></p>
+</section>
+
+<!-- Particle.js CDN and Config -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80 },
+      "color": { "value": "#0ff" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.5 },
+      "size": { "value": 3 },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#0ff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 4,
+        "direction": "none",
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": { "enable": true, "mode": "grab" }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+</body>
+</html>
